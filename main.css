@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    min-width: 380px;
+    margin: 30px;
+    position: relative;
+}
+
+header>input[type=text] {
+    width: 160px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(0, -50%);
+}
+
+header>span {
+    margin-left: 30px;
+    border-bottom: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+.registracija-pacijenata {
+    margin-left: 50px;
+}
+
+.card {
+    min-width: 380px;
+    height: 80px;
+    width: 380px;
+    margin: 40px auto;
+    background-color: lightblue;
+    border-radius: 15px;
+    position: relative;
+}
+
+.name-surname {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: translate(0, -50%);
+    font-size: 17px;
+}
+
+.dijagnoza-wrapper {
+    position: absolute;
+    top: 60%;
+    left: 7%;
+    transform: translate(0, -50%);
+    font-size: 15px;
+}
+
+.edit {
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    transform: translate(0, -50%);
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.delete {
+    position: absolute;
+    top: 50%;
+    right: 19%;
+    transform: translate(0, -50%);
+    padding: 5px;
+    background-color: rgb(245, 32, 32);
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.izlecen {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(0, -50%);
+    padding: 4px;
+    background-color: lightgreen;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.registracija, .promene-u-kartonu {
+    display: none;
+    z-index: 3;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 380px;
+    transform: translate(-50%, 0);
+    border: 2px solid black;
+    padding: 30px;
+    background-color: lightblue;
+}
+
+.registracija>p, .promene-u-kartonu>p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+}
+
+.zatvori, .zatvoriPromene {
+    cursor: pointer;
+}
+
+.registracija>.ime, .registracija>.prezime, .registracija>.oboljenje, .promene-u-kartonu>.imePromena, .promene-u-kartonu>.prezimePromena, .promene-u-kartonu>.oboljenjePromena {
+    display: block;
+    width: 70%;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+.registracija>input[type=radio], .promene-u-kartonu>input[type=radio] {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.dugme-za-slanje, .dugme-za-promenu {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: 60px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
